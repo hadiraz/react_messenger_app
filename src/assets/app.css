@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+/* CSS HEX */
+:root{
+    --background-light: #f3f3f3ff;
+    --dark-grey: rgb(190, 190, 190);
+    --blue-ryb: #5043ffff;
+    --dark-cornflower-blue: #003b95ff;
+    --neon-green: #3cff32ff;
+    --lime-green: #0bdf00ff;
+}
+#root{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--background-light);
+}
+.app_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.login_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--dark-grey);
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.login-btn{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--dark-cornflower-blue);
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.login_title{
+    text-align: center;
+    background-image: linear-gradient(90deg, hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background-size: 100%;
+    background-repeat: repeat;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+.login-btn:hover{
+    background-color: var(--blue-ryb);
+}
+.chat_container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+}
+.navbar_container{
+    display: flex;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    height: 40px;
+    padding: 1rem 1rem;
+    background: var(--background-light);
+    box-shadow: 0 1px 10px 0 #ccc;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.logo_container h5{
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+nav .login-btn{
+    width: max-content;
+    height: max-content;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    padding: 0.4rem 0.6rem;
+}
+.chatEngine{
+    width: 100%;
+}
